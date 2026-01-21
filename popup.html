@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { 
+      width: 250px; 
+      padding: 15px; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      text-align: center; 
+    }
+    
+    /* Layout for Logo + Text */
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Make the logo look nice */
+    .logo-img {
+      width: 32px;
+      height: 32px;
+    }
+
+    h2 { 
+      color: #4CAF50; 
+      margin: 0; 
+      font-size: 20px;
+    }
+
+    select { 
+      width: 100%; 
+      padding: 8px; 
+      margin: 10px 0; 
+      border-radius: 5px; 
+      border: 1px solid #ddd;
+    }
+
+    .status { 
+      font-size: 12px; 
+      color: #888; 
+      margin-top: 15px; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-container">
+    <img src="icon.png" alt="MoodShield Logo" class="logo-img">
+    <h2>MoodShield</h2>
+  </div>
+
+  <p>Select a filter mode:</p>
+  
+  <select id="moodSelector">
+    <option value="sadness">Sadness & Depression</option>
+    <option value="anxiety">Anxiety & Stress</option>
+    <option value="anger">Anger & Conflict</option>
+    <option value="all">Block Everything Negative</option>
+  </select>
+
+  <p class="status">Settings saved automatically.</p>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
