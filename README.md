@@ -9,7 +9,7 @@ MoodShield is a privacy-focused browser extension that protects users from trigg
 - **Customizable Filters:** Users can select their "Mood" (e.g., block Sadness, block Anxiety).
 - **Zero-Latency Feel:** Optimized for performance with no UI lag.
 
-## 🛠️ Technical Implementation (The "Senior" Flex)
+## 🛠️ Technical Implementation
 Unlike traditional blockers that use inefficient polling loops (`setInterval`), MoodShield is built on an **Event-Driven Architecture**:
 
 * **MutationObserver API:** The engine utilizes the `MutationObserver` interface to watch for DOM changes at the browser paint level.
